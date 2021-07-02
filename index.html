@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>HOMEPAGE</title>
+</head>
+<body>
+  <marquee>WELCOME TO OUR WEBSITE - "KESELESAAN ANDA KEUTAMAAN KAMI"</marquee>
+  <div class="container">
+    <div class="nav-bar">
+      <div class="left-side">
+        <div class="brand-logo">
+          <img src="images/arwana.png" style = "width:200px;height:50px;margin-top:10px;">
+        </div>
+        <div class="nav-brand"></div>
+      </div>
+
+      <div class="right-side">
+        <div class="nav-link active-nav-link">
+          <a href="index.html">HOME</a>
+        </div>
+
+        <div class="nav-link">
+          <a href="about.html">ABOUT US</a>
+        </div>
+
+        <div class="nav-link">
+          <div class="dropdown">
+            <a class="dropbtn" style="font-size:15px">e-TICKETING
+              <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+              <a href="trip.html">TRIP</a>
+              <a href="ticket.html">TICKET PRICE</a>
+              <a href="promotion.html">PROMOTION</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-link">
+          <a href="contact.html">CONTACT US</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/dcu2629.jpg" style="width:100%">
+      <div class="text">ARWANA EKSPRES</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/bqc.jpeg" style="width:100%">
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/akj2629.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/akj.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/3bas.jpeg" style="width:100%">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+  <div class="container">
+
+    <div class="content">
+      <div class="menu-items">
+
+        <div class="menu-item">
+          <div class="menu-img-background" style="background-image:url(images/us.png)"></div> 
+
+          <div class="button-content">
+            <a href="about.html" class="button-content">ABOUT US</a>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-img-background" style="background-image:url(images/trip1.jpg)"></div>
+
+            <div class="button-content">
+              <a href="trip.html" class="button-content">TRIP</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-img-background" style="background-image:url(images/abt1.jpg)"></div>
+
+            <div class="button-content ">
+              <a href="ticket.html" class="button-content">TICKET PRICE</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-img-background" style="background-image:url(images/promo1.jpg)"></div>
+
+            <div class="button-content">
+              <a href="promotion.html" class="button-content">PROMOTION</a>
+            </div>
+        </div>
+    
+      </div>
+    </div>
+  </div>
+
+  <div class="promote">
+    <h2>"KESELESAAN ANDA KEUTAMAAN KAMI"</h2>
+  </div>
+  
+  <div id="sfc4xw9pjx7pxkekgt36dq664xg1wu1rmde"></div>
+
+  <div class="footer"
+    <footer id="main-footer">
+
+    <footer id="mid-footer">
+      <ul>
+        <li><a href="https://www.instagram.com/arwanaekspres/" target="_blank"><img src="images/insta.png"></a></li>
+        <li><a href="https://www.facebook.com/Arwana-Travel-Tours-SdnBhd-198401716871227/" target="_blank"><img src="images/fb.png"></a></li>
+      </ul>
+
+    <footer id="end-footer">
+      <p>WE ACCEPT ONLINE PAYMENT:</p>
+      <img src="images/method.png" alt="Logo" style = "width:300px;height:50px;"> <br>
+  </div>
+</body>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<script type="text/javascript" src="https://counter8.stat.ovh/private/counter.js?c=4xw9pjx7pxkekgt36dq664xg1wu1rmde&down=async" async></script>
+<noscript><a href="https://www.freecounterstat.com" title="free web counters"><img src="https://counter8.stat.ovh/private/freecounterstat.php?c=4xw9pjx7pxkekgt36dq664xg1wu1rmde" border="0" title="free web counters" alt="free web counters"></a></noscript>
+</html>
